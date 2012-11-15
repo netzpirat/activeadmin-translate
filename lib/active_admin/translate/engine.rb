@@ -6,7 +6,7 @@ module ActiveAdmin
     class Engine < ::Rails::Engine
 
       initializer 'ActiveAdmin Translate precompile' do |app|
-        app.config.assets.precompile += %w(active_admin/translate.css active_admin/translate.js)
+        app.config.assets.precompile += %w(active_admin/translate.css)
       end
 
     end

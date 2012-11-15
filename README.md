@@ -31,14 +31,7 @@ config.i18n.available_locales = [:en, :de, :fr, :it]
 
 ### Include ActiveAdmin Translate
 
-You need to include the ActiveAdmin JavaScript by adding it to your manifest in
-`app/assets/javascripts/active_admin.js`:
-
-```javascript
-//= require active_admin/translate
-```
-
-Then you also need to import the SASS customizations in `app/assets/stylesheets/active_admin.css.scss`:
+You need to import the SASS for styling the tabs to `app/assets/stylesheets/active_admin.css.scss`:
 
 ```css
 @import "active_admin/translate";

@@ -12,11 +12,19 @@ module ActiveAdmin
       #
       def translate_inputs(name = :translations, &block)
         form_buffers.last << template.content_tag(:div, :class => "activeadmin-translate #{ translate_id }") do
-          locale_tabs << locale_fields(name, block)
+          locale_tabs << locale_fields(name, block) << tab_script
         end
       end
 
       protected
+
+      # Create the script to activate the tabs on insertion.
+      #
+      # @return [String] the script tag
+      #
+      def tab_script
+        template.content_tag(:script, "$('.activeadmin-translate').tabs();".html_safe)
+      end
 
       # Create the local field sets to enter the inputs per locale.
       #

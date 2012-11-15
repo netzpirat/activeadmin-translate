@@ -1,3 +1,0 @@
-$(function() {
-  $('.activeadmin-translate').tabs()
-});
