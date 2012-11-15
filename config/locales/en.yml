@@ -1,4 +1,7 @@
 en:
   active_admin:
     translate:
-      en: "English"
+      en: 'English'
+      de: 'German'
+      fr: 'French'
+      it: 'Italian'
