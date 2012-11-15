@@ -9,7 +9,7 @@ between the locales.
 Add the gem to your `Gemfile`
 
 ```ruby
-gem 'activeadmin-translate`
+gem 'activeadmin-translate'
 ```
 
 and install it with Bundler:
