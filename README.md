@@ -72,7 +72,7 @@ form do |f|
 end
 ```
 
-### Translate your ActiveAdmin show action
+### Translate your ActiveAdmin attributes table
 
 To show the attributes for all locales, you use the `translate_attributes_table_for` view helper:
 
@@ -154,7 +154,7 @@ This project has taken some ideas and code from the following projects:
 
 ## License
 
-Copyright (c) 2012 Dmitrii Soltis, Michael Kessler
+Copyright (c) 2012 Michael Kessler
 
 MIT License
 
