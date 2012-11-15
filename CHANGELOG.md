@@ -1,6 +1,6 @@
 # ActiveAdmin Translate Changelog
 
-## Master
+## 0.2.0 - November 15, 2012
 
 - Add `de`, `fr` and `it` to translations.
 - Fix tab rendering when editing `has_many` relations.
