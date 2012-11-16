@@ -1,6 +1,6 @@
 # ActiveAdmin Translate Changelog
 
-## Master
+## 0.2.1 - November 16, 2012
 
 - Do not loose nested translations on error.
 
