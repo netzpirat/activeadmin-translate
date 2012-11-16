@@ -1,5 +1,9 @@
 # ActiveAdmin Translate Changelog
 
+## Master
+
+- Do not loose nested translations on error.
+
 ## 0.2.0 - November 15, 2012
 
 - Add `de`, `fr` and `it` to translations.

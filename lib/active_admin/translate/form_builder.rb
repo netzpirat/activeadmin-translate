@@ -33,7 +33,7 @@ module ActiveAdmin
       #
       def locale_fields(name, block)
         ::I18n.available_locales.map do |locale|
-          translation = object.method(name).call.find_or_initialize_by_locale(locale)
+          translation = object.translation_for(locale)
           translation.instance_variable_set(:@errors, object.errors) if locale == I18n.default_locale
 
           fields = proc do |form|
