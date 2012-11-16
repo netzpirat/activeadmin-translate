@@ -1,6 +1,6 @@
 # ActiveAdmin Translate Changelog
 
-## Master
+## 0.2.2 - November 16, 2012
 
 - Include SCSS mixins.
 
