@@ -97,7 +97,7 @@ and add more translations with the registered locale symbol.
 
 ## Author
 
-Developed by Michael Kessler, [mksoft.ch](https://mksoft.ch).
+Developed by Michael Kessler, [FlinkFinger GmbH](http://www.flinkfinger.com).
 
 If you like ActiveAdmin Translate, you can watch the repository at
 [GitHub](https://github.com/netzpirat/activeadmin-globalize) and follow [@netzpirat](https://twitter.com/#!/netzpirat)
