@@ -52,4 +52,14 @@
   .activeadmin-translate .ui-tabs-hide {
     display: none !important;
   }
+
+  // locales nested in another fieldset
+  .inputs .activeadmin-translate {
+    margin-left: 10px;
+    margin-right: 10px;
+
+    .locale {
+      border-bottom: 1px solid #ddd;
+    }
+  }
 }
