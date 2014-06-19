@@ -1,5 +1,10 @@
 # ActiveAdmin Translate Changelog
 
+## 0.3.1 - June 19, 2014
+
+- Various fix for recent versions of ActiveAdmin
+- Improve css for tabs
+
 ## 0.2.2 - November 16, 2012
 
 - Include SCSS mixins.

@@ -5,6 +5,7 @@
   .activeadmin-translate .locales {
     overflow: auto;
     margin-right: 10px;
+    margin-bottom: -1px;
 
     li {
       @include section-header;
@@ -12,10 +13,30 @@
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
 
-      float: right !important;
+      float: left;
+
+      margin-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+
+      a {
+        padding: .5em 1em;
+        text-decoration: none;
+
+        &:hover,&:active {
+          text-decoration: underline;
+        }
+      }
 
       &.ui-state-active {
         background: white;
+        border-bottom-color: white;
+
+        a {
+          color: $section-header-text-color;
+          cursor: default;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -32,52 +53,13 @@
     display: none !important;
   }
 
-  .ui-tabs {
-    position: relative;
-    padding: .2em;
-    zoom: 1;
-  }
+  // locales nested in another fieldset
+  .inputs .activeadmin-translate {
+    margin-left: 10px;
+    margin-right: 10px;
 
-  .ui-tabs .ui-tabs-nav {
-    margin: 0;
-    padding: .2em .2em 0;
+    .locale {
+      border-bottom: 1px solid #ddd;
+    }
   }
-
-  .ui-tabs .ui-tabs-nav li {
-    list-style: none;
-    float: left;
-    position: relative;
-    top: 0;
-    margin: 1px .2em 0 0;
-    border-bottom: 0;
-    padding: 0;
-    white-space: nowrap;
-  }
-
-  .ui-tabs .ui-tabs-nav li a {
-    float: left;
-    padding: .5em 1em;
-    text-decoration: none;
-  }
-
-  .ui-tabs .ui-tabs-nav li.ui-tabs-active {
-    margin-bottom: -1px;
-    padding-bottom: 1px;
-  }
-
-  .ui-tabs .ui-tabs-nav li.ui-tabs-active a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-tabs-loading a {
-    cursor: text;
-  }
-
-  .ui-tabs .ui-tabs-nav li a, .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
-    cursor: pointer;
-  }
-
-  .ui-tabs .ui-tabs-panel {
-    display: block;
-    border-width: 0;
-    padding: 1em 1.4em;
-    background: none;
-  }
-
 }
