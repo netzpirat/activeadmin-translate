@@ -1,5 +1,13 @@
 require 'active_admin'
-require 'globalize3'
+require 'active_admin/translate/backend'
+
+ActiveAdmin::Translate.backend = begin
+  require 'traco'
+  :traco
+rescue LoadError
+  require 'globalize'
+  :globalize
+end
 
 require 'active_admin/version'
 require 'active_admin/translate/engine'

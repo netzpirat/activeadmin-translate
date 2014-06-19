@@ -1,15 +1,19 @@
 # ActiveAdmin Translate
 
-Translate your [Globalize3](https://github.com/svenfuchs/globalize3) ActiveModel translations in
-[ActiveAdmin](https://github.com/gregbell/active_admin), using [jQueryUI tabs](http://jqueryui.com/tabs/) to switch
+Translate your [Globalize3](https://github.com/svenfuchs/globalize3)
+or [Traco](https://github.com/barsoom/traco) ActiveModel translations
+in [ActiveAdmin](https://github.com/gregbell/active_admin),
+using [jQueryUI tabs](http://jqueryui.com/tabs/) to switch
 between the locales.
 
 ## Installation
 
-Add the gem to your `Gemfile`
+Add the gem to your `Gemfile` with your i18n db backend `globalize3` or `traco`
 
 ```ruby
 gem 'activeadmin-translate'
+gem 'globalize3' # OR
+gem 'traco'
 ```
 
 and install it with Bundler:
@@ -37,9 +41,16 @@ You need to import the SASS for styling the tabs to `app/assets/stylesheets/acti
 @import "active_admin/translate";
 ```
 
+If `ActiveAdmin` has not already loaded jQuery UI tabs library,
+you need to manually require the file in `app/assets/stylesheets/active_admin.js.coffee`:
+
+```js
+#= require jquery.ui.tabs
+```
+
 ## Usage
 
-### Make your translations accessible
+### Make your translations accessible (Globalize3 only)
 
 In order to access the translations of your model and be able to write them on save, you need to make attributes
 accessible in your model. Globalize3 stores the model translations in a separate table that is accessible as
@@ -54,13 +65,21 @@ end
 
 ### Translate your ActiveAdmin forms
 
+
 To translate your form you need to use the `translate_inputs` form helper:
 
 ```ruby
 form do |f|
+  # globalize3:
   f.translate_inputs do |t|
     t.input :title
     t.input :description
+  end
+
+  # traco:
+  f.translate_inputs do |locale|
+    t.input :"title_#{locale}"
+    t.input :"description_#{locale}"
   end
 end
 ```
@@ -71,7 +90,7 @@ To show the attributes for all locales, you use the `translate_attributes_table_
 
 ```ruby
 show do |model|
-  panel 'Globalized Model' do
+  panel 'Localized Model' do
     translate_attributes_table_for model do
       row :title
       row :description do |p|

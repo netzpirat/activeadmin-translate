@@ -32,6 +32,34 @@ module ActiveAdmin
       # @param [Proc] block the block for the additional inputs
       #
       def locale_fields(name, block)
+        if ActiveAdmin::Translate.traco?
+          locale_fields_for_traco(name, block)
+        else
+          locale_fields_for_globalize(name, block)
+        end
+      end
+
+
+      def locale_fields_for_traco(name, block)
+        buffer = form_buffers.dup
+
+        fieldset = ::I18n.available_locales.map do |locale|
+          @form_buffers = ["".html_safe]
+
+          fields = proc do
+            block.call(locale)
+          end
+
+          inputs(name: name, :id => field_id(locale), :class => "inputs locale locale-#{locale}", &fields)
+        end.join.html_safe
+
+        @form_buffers = buffer
+
+        fieldset
+      end
+
+
+      def locale_fields_for_globalize(name, block)
         ::I18n.available_locales.map do |locale|
           translation = object.translation_for(locale)
           translation.instance_variable_set(:@errors, object.errors) if locale == I18n.default_locale

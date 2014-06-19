@@ -1,5 +1,9 @@
 # ActiveAdmin Translate Changelog
 
+## 0.3.0 - June 3, 2014
+
+- Support for [Traco](https://github.com/barsoom/traco) as i18n backend
+
 ## 0.2.2 - November 16, 2012
 
 - Include SCSS mixins.
