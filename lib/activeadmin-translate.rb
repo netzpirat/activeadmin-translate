@@ -1,5 +1,5 @@
 require 'active_admin'
-require 'globalize3'
+require 'globalize'
 
 require 'active_admin/version'
 require 'active_admin/translate/engine'

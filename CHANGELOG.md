@@ -1,5 +1,11 @@
 # ActiveAdmin Translate Changelog
 
+## 0.2.3 - December 6, 2014
+
+- Remove Globalize3 dependency.
+- Fix UI tab issues.
+- Fix compatibility with current ActiveAdmin.
+
 ## 0.2.2 - November 16, 2012
 
 - Include SCSS mixins.

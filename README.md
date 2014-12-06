@@ -1,7 +1,7 @@
 # ActiveAdmin Translate
 
-Translate your [Globalize3](https://github.com/svenfuchs/globalize3) ActiveModel translations in
-[ActiveAdmin](https://github.com/gregbell/active_admin), using [jQueryUI tabs](http://jqueryui.com/tabs/) to switch
+Translate your [Globalize](https://github.com/globalize/globalize) ActiveModel translations in
+[ActiveAdmin](https://github.com/activeadmin/activeadmin), using [jQueryUI tabs](http://jqueryui.com/tabs/) to switch
 between the locales.
 
 ## Installation
