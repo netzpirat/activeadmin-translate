@@ -9,7 +9,7 @@ between the locales.
 Add the gem to your `Gemfile`
 
 ```ruby
-gem 'activeadmin-translate'
+gem 'activeadmin-translate', github: 'rbatllet/activeadmin-globalize'
 ```
 
 and install it with Bundler:
@@ -142,7 +142,7 @@ See the [CHANGELOG](https://github.com/netzpirat/activeadmin-globalize/blob/mast
 
 This project has taken some ideas and code from the following projects:
 
-- [activeadmin-globalize3](https://github.com/stefanoverna/activeadmin-globalize3) from [Stefano Verna](https://github.com/stefanoverna)
+- [activeadmin-globalize](https://github.com/stefanoverna/activeadmin-globalize) from [Stefano Verna](https://github.com/stefanoverna)
 - [ActiveAdmin-Globalize3-inputs](https://github.com/mimimi/ActiveAdmin-Globalize3-inputs) from [Dmitrii Soltis](https://github.com/mimimi)
 
 ## License
