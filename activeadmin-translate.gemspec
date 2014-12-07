@@ -2,11 +2,11 @@
 require File.expand_path('../lib/active_admin/translate/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ['Michael Kessler']
+  gem.authors       = ['Michael Kessler', 'R. Batlle']
   gem.email         = %w(michi@flinkfinger.com)
   gem.summary       = %q{Translate models with ActiveAdmin.}
   gem.description   = %q{Translate your models in ActiveAdmin with Globalize.}
-  gem.homepage      = 'https://github.com/netzpirat/activeadmin-translate'
+  gem.homepage      = 'https://github.com/rbatllet/activeadmin-translate'
 
   gem.files         = Dir['{app,lib,config}/**/*'] + %w(LICENSE README.md CHANGELOG.md CONTRIBUTING.md)
   gem.name          = 'activeadmin-translate'
