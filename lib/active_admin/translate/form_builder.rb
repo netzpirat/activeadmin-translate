@@ -11,7 +11,12 @@ module ActiveAdmin
       # @param [Proc] block the block for the additional inputs
       #
       def translate_inputs(name = :translations, &block)
-        template.content_tag(:div, :class => "activeadmin-translate #{ translate_id }") do
+        if self.respond_to?(:form_buffers)
+          html = form_buffers.last
+        else
+          html = "".html_safe
+        end
+        html << template.content_tag(:div, :class => "activeadmin-translate #{ translate_id }") do
           locale_tabs << locale_fields(name, block) << tab_script
         end
       end
