@@ -9,7 +9,7 @@ between the locales.
 Add the gem to your `Gemfile`
 
 ```ruby
-gem 'activeadmin-translate', github: 'rbatllet/activeadmin-translate'
+gem 'activeadmin-translate', github: 'twintags/activeadmin-translate'
 ```
 
 and install it with Bundler:
