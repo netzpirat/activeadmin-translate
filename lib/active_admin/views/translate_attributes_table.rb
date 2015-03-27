@@ -17,9 +17,11 @@ module ActiveAdmin
                 header_content_for(attr)
               end
             end
-            td do
-              ::I18n.with_locale locale do
-                content_for(block || attr)
+            @collection.each do |record|
+              td do
+                ::I18n.with_locale locale do
+                  content_for(record, block || attr)
+                end
               end
             end
           end
