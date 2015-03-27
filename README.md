@@ -26,7 +26,7 @@ ActiveAdmin Translate takes the available languages from `I18n.available_locales
 your `application.rb` like
 
 ```ruby
-config.i18n.available_locales = [:en, :de, :fr, :it]
+config.i18n.available_locales = [:en, :de, :fr, :it, :es, :ca]
 ```
 
 ### Include ActiveAdmin Translate
