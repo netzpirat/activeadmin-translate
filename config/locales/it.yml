@@ -2,6 +2,6 @@ it:
   active_admin:
     translate:
       en: 'Inglese '
-      de: 'Alemanno'
+      de: 'Tedesco'
       fr: 'Francese '
       it: 'Italiano'
