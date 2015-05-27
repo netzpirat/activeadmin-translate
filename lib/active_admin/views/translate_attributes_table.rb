@@ -18,7 +18,7 @@ module ActiveAdmin
               end
             end
             td :width => 1 do
-              raw("<b>#{locale}</b>")
+              raw("<b>#{locale.upcase}</b>")
             end
             td do
               ::I18n.with_locale locale do
