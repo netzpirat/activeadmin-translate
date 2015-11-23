@@ -16,9 +16,13 @@ module ActiveAdmin
         else
           html = "".html_safe
         end
+
         html << template.content_tag(:div, :class => "activeadmin-translate #{ translate_id }") do
           locale_tabs << locale_fields(name, block) << tab_script
         end
+
+        template.concat(html) if template.output_buffer
+        html
       end
 
       protected
@@ -43,7 +47,7 @@ module ActiveAdmin
 
           fields = proc do |form|
             form.input(:locale, :as => :hidden)
-            block.call(form)
+            block.call form
           end
 
           inputs_for_nested_attributes(:for => [name, translation], :id => field_id(locale), :class => "inputs locale locale-#{ locale }", &fields)
