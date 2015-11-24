@@ -1,9 +1,13 @@
 # ActiveAdmin Translate Changelog
 
+## 0.2.6 - November 24, 2015
+
+- Support for has_many translates (Thanks Pavel Borsky)
+
 ## 0.2.5 - March 27, 2015
 
-Updates content_for block to accept record object (Thanks David Stump)
-Add more locales
+- Updates content_for block to accept record object (Thanks David Stump)
+- Add more locales
 
 ## 0.2.4 - January 14, 2015
 
