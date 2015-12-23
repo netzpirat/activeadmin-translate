@@ -1,5 +1,9 @@
 # ActiveAdmin Translate Changelog
 
+## 0.2.7 - December 23, 2015
+
+- Fixed problem when block f.translate_inputs called before f.inputs and only one input field rendered (Thanks Pavel Borsky)
+
 ## 0.2.6 - November 24, 2015
 
 - Support for has_many translates (Thanks Pavel Borsky)
