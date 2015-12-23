@@ -17,6 +17,8 @@ module ActiveAdmin
           html = "".html_safe
         end
 
+        template.assign(has_many_block: true)
+
         html << template.content_tag(:div, :class => "activeadmin-translate #{ translate_id }") do
           locale_tabs << locale_fields(name, block) << tab_script
         end
