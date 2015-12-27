@@ -1,0 +1,9 @@
+ca:
+  active_admin:
+    translate:
+      en: 'Anglès'
+      de: 'Alemany'
+      fr: 'Francès'
+      it: 'Italià'
+      es: 'Espanyol'
+      ca: 'Català'

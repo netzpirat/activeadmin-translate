@@ -1,7 +1,7 @@
 # ActiveAdmin Translate
 
-Translate your [Globalize3](https://github.com/svenfuchs/globalize3) ActiveModel translations in
-[ActiveAdmin](https://github.com/gregbell/active_admin), using [jQueryUI tabs](http://jqueryui.com/tabs/) to switch
+Translate your [Globalize](https://github.com/globalize/globalize) ActiveModel translations in
+[ActiveAdmin](https://github.com/activeadmin/activeadmin), using [jQueryUI tabs](http://jqueryui.com/tabs/) to switch
 between the locales.
 
 ## Installation
@@ -9,7 +9,7 @@ between the locales.
 Add the gem to your `Gemfile`
 
 ```ruby
-gem 'activeadmin-translate'
+gem 'activeadmin-translate', github: 'twintags/activeadmin-translate'
 ```
 
 and install it with Bundler:
@@ -26,7 +26,7 @@ ActiveAdmin Translate takes the available languages from `I18n.available_locales
 your `application.rb` like
 
 ```ruby
-config.i18n.available_locales = [:en, :de, :fr, :it]
+config.i18n.available_locales = [:en, :de, :fr, :it, :es, :ca]
 ```
 
 ### Include ActiveAdmin Translate
@@ -42,7 +42,7 @@ You need to import the SASS for styling the tabs to `app/assets/stylesheets/acti
 ### Make your translations accessible
 
 In order to access the translations of your model and be able to write them on save, you need to make attributes
-accessible in your model. Globalize3 stores the model translations in a separate table that is accessible as
+accessible in your model. Globalize stores the model translations in a separate table that is accessible as
 `translations` in your model:
 
 ```ruby
@@ -100,14 +100,14 @@ and add more translations with the registered locale symbol.
 Developed by Michael Kessler, [FlinkFinger GmbH](http://www.flinkfinger.com).
 
 If you like ActiveAdmin Translate, you can watch the repository at
-[GitHub](https://github.com/netzpirat/activeadmin-globalize) and follow [@netzpirat](https://twitter.com/#!/netzpirat)
+[GitHub](https://github.com/netzpirat/activeadmin-translate) and follow [@netzpirat](https://twitter.com/netzpirat)
 on Twitter for project updates.
 
 ## Contribute to ActiveAdmin Translate
 
 ### File an issue
 
-You can report bugs and feature requests to [GitHub Issues](https://github.com/netzpirat/activeadmin-globalize/issues).
+You can report bugs and feature requests to [GitHub Issues](https://github.com/netzpirat/activeadmin-translate/issues).
 
 **Please don't ask question in the issue tracker**, instead ask them at Stackoverflow and use the
 [activeadmin](http://stackoverflow.com/questions/tagged/activeadmin) tag.
@@ -122,27 +122,26 @@ When you file a bug, please try to follow these simple rules if applicable:
 
 ### Development
 
-* Documentation hosted at [RubyDoc](http://rubydoc.info/github/netzpirat/activeadmin-globalize/master/frames).
-* Source hosted at [GitHub](https://github.com/netzpirat/activeadmin-globalize).
+* Source hosted at [GitHub](https://github.com/netzpirat/activeadmin-translate).
 
 Pull requests are very welcome! Please try to follow these simple rules if applicable:
 
 * Please create a topic branch for every separate change you make.
 * Update the [Yard](http://yardoc.org/) documentation.
-* Update the [README](https://github.com/netzpirat/activeadmin-globalize/blob/master/README.md).
-* Update the [CHANGELOG](https://github.com/netzpirat/activeadmin-globalize/blob/master/CHANGELOG.md) for noteworthy changes.
+* Update the [README](https://github.com/netzpirat/activeadmin-translate/blob/master/README.md).
+* Update the [CHANGELOG](https://github.com/netzpirat/activeadmin-translate/blob/master/CHANGELOG.md) for noteworthy changes.
 * Please **do not change** the version number.
 
 ## Contributors
 
-See the [CHANGELOG](https://github.com/netzpirat/activeadmin-globalize/blob/master/CHANGELOG.md) and the GitHub list of
-[contributors](https://github.com/netzpirat/activeadmin-globalize/contributors).
+See the [CHANGELOG](https://github.com/netzpirat/activeadmin-translate/blob/master/CHANGELOG.md) and the GitHub list of
+[contributors](https://github.com/netzpirat/activeadmin-translate/contributors).
 
 ## Acknowledgment
 
 This project has taken some ideas and code from the following projects:
 
-- [activeadmin-globalize3](https://github.com/stefanoverna/activeadmin-globalize3) from [Stefano Verna](https://github.com/stefanoverna)
+- [activeadmin-globalize](https://github.com/stefanoverna/activeadmin-globalize) from [Stefano Verna](https://github.com/stefanoverna)
 - [ActiveAdmin-Globalize3-inputs](https://github.com/mimimi/ActiveAdmin-Globalize3-inputs) from [Dmitrii Soltis](https://github.com/mimimi)
 
 ## License
