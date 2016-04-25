@@ -17,6 +17,9 @@ module ActiveAdmin
                 header_content_for(attr)
               end
             end
+            td :width => 1 do
+              raw("<b>#{locale.upcase}</b>")
+            end
             td do
               ::I18n.with_locale locale do
                 content_for(block || attr)
