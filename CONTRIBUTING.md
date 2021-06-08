@@ -4,7 +4,7 @@ Contribute to ActiveAdmin Translate
 File an issue
 -------------
 
-You can report bugs and feature requests to [GitHub Issues](https://github.com/netzpirat/activeadmin-globalize/issues).
+You can report bugs and feature requests to [GitHub Issues](https://github.com/netzpirat/activeadmin-translate/issues).
 
 **Please don't ask question in the issue tracker**, instead ask them at Stackoverflow and use the
 [activeadmin](http://stackoverflow.com/questions/tagged/activeadmin) tag.
@@ -20,8 +20,7 @@ When you file a bug, please try to follow these simple rules if applicable:
 Development
 -----------
 
-* Documentation hosted at [RubyDoc](http://rubydoc.info/github/netzpirat/activeadmin-globalize/master/frames).
-* Source hosted at [GitHub](https://github.com/netzpirat/activeadmin-globalize).
+* Source hosted at [GitHub](https://github.com/netzpirat/activeadmin-translate).
 
 Pull requests are very welcome! Please try to follow these simple rules if applicable:
 

@@ -3,7 +3,7 @@ module ActiveAdmin
 
     # Adds a builder method `translate_attributes_table_for` to build a
     # table with translations for a model that has been localized with
-    # Globalize3.
+    # Globalize.
     #
     class TranslateAttributesTable < ::ActiveAdmin::Views::AttributesTable
 
@@ -17,9 +17,11 @@ module ActiveAdmin
                 header_content_for(attr)
               end
             end
-            td do
-              ::I18n.with_locale locale do
-                content_for(block || attr)
+            @collection.each do |record|
+              td do
+                ::I18n.with_locale locale do
+                  content_for(record, block || attr)
+                end
               end
             end
           end

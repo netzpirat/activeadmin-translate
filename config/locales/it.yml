@@ -1,7 +1,9 @@
 it:
   active_admin:
     translate:
-      en: 'Inglese '
+      en: 'Inglese'
       de: 'Alemanno'
-      fr: 'Francese '
+      fr: 'Francese'
       it: 'Italiano'
+      es: 'Spagnolo'
+      ca: 'Catalano'
